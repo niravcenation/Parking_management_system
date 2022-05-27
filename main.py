@@ -12,8 +12,6 @@ root.maxsize(1000, 800)
 root.title("Park-Up")
 
 
-# root.configure(bg = 'yellow')
-
 def two_wheel():
     f3 = Frame()
     f3.configure(bg="lightgreen")
@@ -209,30 +207,6 @@ def first_page():
            borderwidth=10, relief=SUNKEN).pack(side=TOP, pady=100)
     Button(f1, text="Two Wheeler", font="TimesNewRoman 40 bold", command=two_wheel, bg="blue", fg="white",
            borderwidth=10, relief=SUNKEN).pack(side=TOP, pady=100)
-
-
-# def scan_page():
-#     scan_frame = Frame()
-#     scan_frame.configure(bg="yellow")
-#     scan_frame.place(x=0, y=0, width=1000, height=800)
-#
-#     Label(scan_frame, text="Wait For A While To Scan Number-Plate", font="TimesNewRoman 20 bold", bg="lightblue",
-#           fg="blue", pady=20,
-#           padx=20,
-#           borderwidth=10, relief=RIDGE).pack(side=TOP, pady=40)
-#     reader = easyocr.Reader(['en'],gpu = False)
-#     result = reader.readtext("no_plate.jpg")
-#     text1 = result[1][1]
-#     f = open("park_up.txt", "a")
-#     f.write(f"The vehicle with number-plate{text1} at Time = {datetime.datetime.now()}" + "\n")
-#
-#     Label(scan_frame, text=f"The vehicle with number-plate{text1} at Time = {datetime.datetime.now()}",
-#           font="TimesNewRoman 10 bold", bg="lightpink", fg="blue", pady=20,
-#           padx=20,
-#           borderwidth=10, relief=RIDGE).pack(side=TOP, pady=40)
-#     Button(scan_frame, text="Your Number-Plate is Scanned.\nTap to Continue", font="TimesNewRoman 40 bold", command=first_page(),
-#            bg="brown", fg="lightyellow",
-#            borderwidth=10, relief=SUNKEN).pack(side=TOP, pady=100)
 
 
 f0 = Frame()
